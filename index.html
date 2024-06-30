@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Two-Player Trivia Game using JavaScript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="player-details">
+            <h2>Players Details</h2>
+            <h3>Player 1 Name:</h3>
+            <input type="text" id="name1" required>
+            <br>
+            <h3>Player 2 Name:</h3>
+            <input type="text" id="name2" required>
+            <br>
+            <button id="start">Start Game</button>
+        </div>
+        <div id="category" style="display: none;">
+            <h2>Category Selection</h2>
+            <select id="select-category"></select>
+            <br>
+            <button id="select-category-btn">Select Category</button>
+        </div>
+        <div id="questions" style="display: none;">
+            <h2>Question</h2>
+            <p id="question-text"></p>
+            <h3>Answers</h3>
+            <ul id="answers"></ul>
+            <button id="submit-answer">Submit Answer</button>
+        </div>
+        <div id="score" style="display: none;">
+            <h2>Score Board</h2>
+            <p>Player 1: <span id="player1-score">0</span></p>
+            <p>Player 2: <span id="player2-score">0</span></p>
+        </div>
+        <div id="end" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="message"></p>
+            <button id="play-again">Play Again</button>
+            <button id="end-game">End Game</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
